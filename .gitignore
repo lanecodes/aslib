@@ -1,0 +1,5 @@
+# Python fluff
+*.py[co]
+
+# Packaging fluff
+aslib.egg-info/
