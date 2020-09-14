@@ -87,17 +87,21 @@ class MillingtonLct(Enum):
 
 @unique
 class AgroSuccessLct(Enum):
-    """Land cover types and corresponding codes used in AgroSuccess."""
+    """Land cover types and corresponding codes used in AgroSuccess.
+
+    Aliases do not correspond to lower case enumeration constants. This is to
+    support consistency with the aliases used in the Java implementation of
+    the AgroSuccess simulation model.
+    """
     WATER_QUARRY = (0, "WaterQuarry", Color.BLUE)
     BURNT = (1, "Burnt", Color.RED)
-    BARLEY = (2, "Barley", Color.GREY)
-    WHEAT = (3, "Wheat", Color.VIOLET)
-    DAL = (4, "DAL", Color.YELLOW)
-    SHRUBLAND = (5, "Shrubland", Color.LIGHT_BLUE)
-    PINE = (6, "Pine", Color.GREEN)
-    TRANS_FOREST = (7, "TransForest", Color.LIGHT_PURPLE)
-    DECIDUOUS = (8, "Deciduous", Color.ORANGE)
-    OAK = (9, "Oak", Color.DARK_PURPLE)
+    WHEAT = (2, "Wheat", Color.VIOLET)
+    DAL = (3, "DAL", Color.YELLOW)
+    SHRUBLAND = (4, "Shrubland", Color.LIGHT_BLUE)
+    PINE = (5, "Pine", Color.GREEN)
+    TRANS_FOREST = (6, "TransForest", Color.LIGHT_PURPLE)
+    DECIDUOUS = (7, "Deciduous", Color.ORANGE)
+    OAK = (8, "Oak", Color.DARK_PURPLE)
 
     def __init__(self, code: int, alias: str, color: Color) -> None:
         self._code = code
