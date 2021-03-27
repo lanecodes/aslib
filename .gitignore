@@ -1,5 +1,6 @@
 # Python fluff
 *.py[co]
+.pytest_cache
 
 # Packaging fluff
 aslib.egg-info/
