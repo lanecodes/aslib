@@ -3,13 +3,13 @@ encodings.py
 ~~~~~~~~~~~~
 
 Encodings between different environmental states and numerical codes used to
-represent them in simulation models. Includes enumerators used to convert 
+represent them in simulation models. Includes enumerators used to convert
 between numerical codes and human readable values.
 
 Note
 ----
 The Enums here are based on those from the `scripts/constants.py` module in the
-`agrosuccess-graph` project. 
+`agrosuccess-graph` project.
 """
 from enum import Enum, unique
 
@@ -17,10 +17,10 @@ from aslib.colors import Color
 
 @unique
 class Succession(Enum):
-    """Represents succession pathways. 
-    
-    Regeneration entails there is material in the landscape which resprouting 
-    species can use to regenerate. Secondary succession is contrasted with 
+    """Represents succession pathways.
+
+    Regeneration entails there is material in the landscape which resprouting
+    species can use to regenerate. Secondary succession is contrasted with
     primary succession.
     """
     REGENERATION = 0
@@ -64,8 +64,8 @@ class Water(Enum):
 @unique
 class MillingtonLct(Enum):
     """Land cover types corresponding to James's PhD thesis.
-    
-    These are the codes which correspond to the transition table included in 
+
+    These are the codes which correspond to the transition table included in
     the supplementary materials for Millington2009 paper.
     """
     PINE = 1
